@@ -80,9 +80,7 @@ public class EmoticonsGridAdapter extends BaseAdapter{
 		 } catch (Exception e){
 					e.printStackTrace();
 		 }
-		 
-		 //BitmapFactory.Options options = new BitmapFactory.Options();
-		 //options.inSampleSize = chunks;
+
 		 
 		 Bitmap temp = BitmapFactory.decodeStream(in ,null ,null);
 		 return temp;
@@ -90,6 +88,6 @@ public class EmoticonsGridAdapter extends BaseAdapter{
 	
 	public interface KeyClickListener {
 		
-		public void keyClickedIndex(String index);
+		 void keyClickedIndex(String index);
 	}
 }

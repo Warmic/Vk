@@ -46,6 +46,7 @@ public class EmoticonsPagerAdapter extends PagerAdapter {
 		}
 
 		GridView grid = (GridView) layout.findViewById(R.id.emoticons_grid);
+
 		EmoticonsGridAdapter adapter = new EmoticonsGridAdapter(
 				mActivity.getApplicationContext(), emoticonsInAPage, position,
 				mListener);

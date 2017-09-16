@@ -14,22 +14,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:id="@+id/xd"
         android:layout_height="wrap_content">
+
+
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.85"
+            android:id="@+id/thumb_parent"
             android:orientation="vertical"
             android:padding="0dp">
 
-            <EditText
-                android:id="@+id/chat_content"
+            <include
+                android:id="@+id/footer_layout"
+                layout="@layout/thumbnails_popup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Картинки с фоном"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content" />
 
+            <!--
+            <LinearLayout
+                android:id="@+id/footer_for_thumbnails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible" />
+            -->
 
         </LinearLayout>
 
@@ -49,8 +60,8 @@
             <Button
                 android:id="@+id/post_button"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_margin="12dp"
+                android:layout_height="27dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/soft_button"
                 android:paddingEnd="15dp"
                 android:paddingStart="15dp"

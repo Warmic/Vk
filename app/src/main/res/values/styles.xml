@@ -17,16 +17,5 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="bold_normal">
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#528bcc</item>
-    </style>
-
-    <style name="bold_light">
-        <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#528bcc</item>
-    </style>
 
 </resources>
